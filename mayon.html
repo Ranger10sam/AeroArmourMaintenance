@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    .container{
+        background: url(./bg.png);
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   .container::before{
+    content: '';
+    position: absolute;
+    left: 7%;
+    top: 9%;
+    background: url(./l1.png) no-repeat;
+    height: 100px;
+    width: 170px;
+    z-index: 1;
+   }
+   .container::after{
+    content: '';
+    position: absolute;
+    right: 5%;
+    top: 19%;
+    background: url(./l2.png) no-repeat;
+    height: 100px;
+    width: 170px;
+    z-index: 1;
+   }
+
+.container .small {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+/* >_ RETRY_PROTOCOL:::FAILED */
+
+.container .first {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: end;
+    justify-content: space-between;
+}
+
+
+.container .first p,.stext{
+
+    font-family: 'Arame';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.3159px;
+    line-height: 138%;
+    opacity: 0.3;
+    letter-spacing: 0.12em;
+    
+    color: #FFFFFF;
+}
+
+/* Group 2275 */
+.container .second{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 919px;
+height: 205px;
+}
+.container .second::before{
+    content: '';
+    width: 919px;
+height: 205px;
+opacity: 0.3;
+position: absolute;
+background: url(./Group\ 2273.png) no-repeat;
+background-position: center;
+top: 0;
+/* left: 0; */
+/* z-index: 1; */
+}
+
+.container .second h1{
+
+z-index: 9;
+font-family: 'Arame';
+font-style: normal;
+font-weight: 900;
+font-size: 79.0695px;
+line-height: 109%;
+text-align: center;
+color: #FFFFFF;
+opacity: 1;
+
+
+}
+
+.container .second p{
+    /* Website Under - Mission Upgrade */
+
+font-family: 'Arame';
+font-style: normal;
+font-weight: 400;
+font-size: 35.1906px;
+line-height: 138%;
+/* opacity: 0.3; */
+text-align: center;
+letter-spacing: 0.17em;
+color: #FFFFFF;
+
+
+}
+
+.container .small p{
+
+font-family: 'Arame';
+font-style: normal;
+font-weight: 400;
+font-size: 15.3159px;
+line-height: 138%;
+/* or 21px */
+letter-spacing: 0.12em;
+text-align: left;
+color: #FFFFFF;
+
+
+}
+
+.container .tfirst .down .big_left {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    
+}
+.tfirst {
+    margin-left:-5rem;
+}
+.tsecond{
+    margin-right:-5rem;
+}
+.container .third {
+    display: flex;
+    justify-content: space-between;
+}
+.container .third .tsecond .big_left {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .third .stext{
+    margin: 1rem 0;
+}
+.container  .down .left{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 250px;
+    height: 100px;
+margin-right: 1rem;
+}
+
+.container  .down .left::before{
+    content: '  ';
+    width: 250px;
+    height: 100px;
+opacity: 0.3;
+position: absolute;
+background: url(./Group\ 2273.png) no-repeat;
+background-position: center;
+top: 0;
+}
+.container  .down .left p{
+
+
+font-family: 'Arame';
+font-style: normal;
+font-weight: 700;
+font-size: 15.3159px;
+line-height: 138%;
+width: 300px;
+letter-spacing: 0.12em;
+color: #FFFFFF;
+
+}
+.inner_container{
+    width: 60%;
+    margin: 0 auto;
+}
+.container  .down  img.social{
+
+width: 60px;
+height: 60px;
+margin-right: 1rem;
+}
+footer{
+    
+  
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+footer .left_footer, footer .right_footer{
+    display: flex;
+    width: 40%;
+
+}
+footer  .f_heading{
+text-align: left;
+font-family: 'Arame';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 139%;
+
+letter-spacing: 0.12em;
+
+color: rgba(255, 255, 255, 0.42);
+
+}
+footer .left{
+    margin: 0 1rem;
+}
+footer .f_sub{
+
+
+font-family: 'Arame';
+font-style: normal;
+font-weight: 400;
+font-size: 22.805px;
+line-height: 162%;
+
+letter-spacing: 0.12em;
+color: #FFFFFF;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .inner_container {
+    width: 95%;
+    margin: 0 auto;
+}
+.container .second h1{
+    font-size: 30px;
+}
+.container .second::before,.container .second{
+    height: 150px;
+    width: 100%;
+}
+.container .second p{
+    font-size: 24px;
+}
+.tfirst {
+    margin-left:0;
+}
+.tsecond{
+    margin-right:0;
+}
+footer .left_footer, footer .right_footer{
+    width: 100%;
+}
+footer{
+    flex-direction: column;
+}
+.container .tfirst .down .big_left{
+    align-items: center;
+}
+.container .third{
+    flex-direction: column;
+}
+.container .third .tsecond .big_left{
+    flex-direction: row;
+}
+footer .f_sub{
+    font-size: 14px;
+}
+.container .down .left{
+    width: 200px;
+}
+.container .down .left::before{
+    width: 200px;
+}
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <div class="first">
+                <div class="text">
+                <p>>_ DATA_FETCH_REQUEST:::FAILED</p>
+                <p>>_ REQUEST_RES:::NULL</p>
+                <p>>_ RETRY_PROTOCOL:::FAILED</p>
+                <p>>_ AOP.EXCPTN:::VITALMNTNCEXCPTN</p>
+                </div>
+                <div class="fig">
+                    <img src="./Group 2281.png" alt="">
+                </div>
+            </div>
+            <div class="small">
+                <p>SYS.FLAG.MSGBOX >_</p>
+                <p>X</p>
+            </div>
+            <div class="second">
+                <!-- <img src="./Group 2273.png" alt=""> -->
+                <h1>< ERR.AAX8 ></h1>
+                <p>Website Under - Mission Upgrade</p>
+            </div>
+            <div class="third">
+                <div class="tfirst">
+                    <div class="up">
+                        <p class="stext">AEROSENCE MSGBOX 1</p>
+                    </div>
+                    <div class="down">
+                        <div class="big_left">
+                            <div class="left">
+                                <p>For Urgent Order Queries DM us on our Social Media Channels.</p>
+                            </div>
+                            <a href="https://www.facebook.com/aeroarmour.store?mibextid=ZbWKwL"><img src="./fb.png" alt="" class="social"></a>
+                            <a href="https://www.instagram.com/aeroarmour.store?igsh=dzFkaHh6cm1zZG45"><img src="./ig.png" alt="" class="social"></a>
+                            
+                        </div>
+                        <div class="right">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tsecond">
+                    <div class="up">
+                        <p class="stext">AEROSENCE MSGBOX 2</p>
+                    </div>
+                    <div class="down">
+                        <div class="big_left">
+                            <div class="left">
+                                <p>You can also check us
+                                    out on Amazon and Myntra.</p>
+                            </div>
+                            <a href="https://www.amazon.in/s?srs=93567577031"><img src="./amaxon.png" alt="" class="social"></a>
+                            <a href="https://www.myntra.com/aero-armour?rawQuery=aero%20armour"><img src="./mintra.png" alt="" class="social"></a>
+                        </div>
+                        <div class="right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="left_footer">
+                        <div class="left">
+                                <img src="./phone.png" alt="">
+                        </div>
+                        <div class="right"> 
+                                <p class="f_heading">Contact Us At</p>
+                                <p class="f_sub">PH: +91-9007524340</p>
+                        </div>
+                </div>
+                <div class="right_footer">
+                    <div class="left">
+                        <img src="./email.png" alt="">
+                </div>
+                <div class="right"> 
+                        <p class="f_heading">Contact Us AT</p>
+                        <p class="f_sub">info@aeroarmour.store</p>
+                </div>
+                </div>
+            </footer>
+        </div>
+                
+    </div>
+    
+</body>
+</html>
